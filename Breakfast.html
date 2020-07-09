@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DinnerMenu</title>
+        <style>
+            *{
+                 background-image: url(background.jpg);
+                 background-repeat: no-repeat; 
+                 margin-top: 5%;
+                 background-position: center;
+                 text-align: center;
+            }
+            body{
+                overflow-x: hidden;
+            }
+            .container,.menulist{
+                color:mediumvioletred;
+                text-align: center;
+            }
+            .container{
+                display:flex;
+                flex-flow:row;
+                padding:2%;
+            }
+            button{
+                text-align: center;
+                background-color:greenyellow;
+                background: greenyellow;
+                border:2px solid greenyellow;
+                cursor:pointer;
+                padding:3%;
+            }
+            img{
+                border-radius: 50%;
+                width:100%;
+            }
+            li{
+                list-style-type: none;
+                font-size:30px;
+                font-style: italic;
+            }
+            .footer{
+                background-color:white;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="image">
+            <img src="Breakfast.jpg" >
+            <br><br>
+            <button onclick="gotoMenu()">Go to Menu Card</button>
+        </div>
+        <script>
+            function gotoMenu(){
+                window.location.href="menucard.html";
+            }
+        </script>
+        <div class="menulist">
+            <h2 style="font-size: 40px;font-weight: bolder;">Your Orders</h2>
+            <ul>
+                <li>Idly(2)------------- ‎₹‎20</li>
+                <li>Dosa-----------------------₹35</li>
+                <li>Vada-----------------------₹15</li>
+                <li>OnionDosa-----------------------₹40</li>
+                <li>MasalaDosa-----------------------₹55</li>
+                <li>Pongal-----------------------₹30</li>
+            </ul>
+            <br>
+            <button>Get the Bill</button>
+        </div>
+    </div>
+    <div class="footer" style="letter-spacing: 2px;color:grey;text-align: center;margin-top:40%">
+        <h1>Akshaya Maheswaran &copy;</h1>
+    </div>
+    </body>
+</html>
